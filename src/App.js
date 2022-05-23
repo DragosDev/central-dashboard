@@ -8,8 +8,8 @@ function App() {
       <Topbar/>
       <div className="container">
       <Sidebar/>
+      <div className="others">othe pages</div>
       </div>
-      
     </div>
   )
 }
