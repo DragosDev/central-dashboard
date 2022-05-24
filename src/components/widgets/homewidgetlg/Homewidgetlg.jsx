@@ -1,4 +1,4 @@
-import ".widgetlg.css"
+import "./homewidgetlg.css"
 
 export default function Homewidgetlg() {
   return (
