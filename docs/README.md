@@ -73,3 +73,9 @@ e. Topbar.jsx - import the topbar.css file created
 <br>Possible you forgot to add the parenthesis's to the return ()
 <br>![](2022-05-23-10-04-21.png)
 
+2. react-router-dom
+<br>Please install the react-router-dom@5.2.0 instead of the latest version of react-router-dom
+
+3. yarn add @mui-material
+<br>You might have an error regarding the material ui icons, 
+<br>Install the @mui-material package as well because the latest version was renamed to mui from material

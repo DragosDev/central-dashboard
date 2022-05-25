@@ -1,9 +1,9 @@
-import Chart from "../../chart/Chart"
-import FeaturedInfo from "../../featuredInfo/FeaturedInfo"
-import Homewidgetsm from "../../widgets/homewidgetsm/Homewidgetsm"
-import Homewidgetlg from "../../widgets/homewidgetlg/Homewidgetlg"
+import Chart from "../../components/chart/Chart"
+import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo"
+import Homewidgetsm from "../../components/widgets/homewidgetsm/Homewidgetsm"
+import Homewidgetlg from "../../components/widgets/homewidgetlg/Homewidgetlg"
 import "./home.css";
-import { userData } from "../../../fakeData";
+import { userData } from "../../fakeData";
 
 
 export default function Home() {
