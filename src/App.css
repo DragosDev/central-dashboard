@@ -6,3 +6,8 @@
     flex: 4;
     background-color: red;
 }
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}

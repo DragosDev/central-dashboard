@@ -79,3 +79,7 @@ e. Topbar.jsx - import the topbar.css file created
 3. yarn add @mui-material
 <br>You might have an error regarding the material ui icons, 
 <br>Install the @mui-material package as well because the latest version was renamed to mui from material
+
+3. Can't resolve '@mui/data-grid'
+<br> Import as 
+<br><code>import { DataGrid } from "@mui/x-data-grid";</code>
