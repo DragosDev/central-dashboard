@@ -3,7 +3,7 @@ import Sidebar from './components/sidebar/Sidebar'
 import './App.css'
 //Pages
 import Home from './pages/home/Home'
-import UserList from './pages/userList/UserList'
+import User from './pages/user/User'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -17,7 +17,10 @@ function App() {
           <Home />
         </Route>
         <Route path="/users">
-          <UserList />
+          <User />
+        </Route>
+        <Route path="/user/:userId">
+          <User />
         </Route>
       </Switch>
     </div>
