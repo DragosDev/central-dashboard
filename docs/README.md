@@ -83,3 +83,8 @@ e. Topbar.jsx - import the topbar.css file created
 3. Can't resolve '@mui/data-grid'
 <br> Import as 
 <br><code>import { DataGrid } from "@mui/x-data-grid";</code>
+
+4. The users page is not showing up
+<br> In the userList.jsx import the DataGrid from material-ui 
+<br><code>import { DataGrid } from "@material-ui/data-grid";</code>
+
