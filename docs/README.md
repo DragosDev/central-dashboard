@@ -114,3 +114,22 @@ export default function Reports() {
 <br> In the userList.jsx import the DataGrid from material-ui 
 <br><code>import { DataGrid } from "@material-ui/data-grid";</code>
 
+5. The Users and Products pages etc from the sidebar are not routing when clicked but work on direct link 
+<br>Have react-router-dom@5.2.0.0 installed
+<br>Add this code into your index.js
+<br>The problem is the ReactDOM component which is created by default
+<br>Wrap your <App /> component in BrowserRouter and it should work
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+```
