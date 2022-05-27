@@ -28,6 +28,7 @@ function App() {
 
           <Route path="/user/:userId">
             <User />
+            
           </Route>
           <Route path="/newUser">
             <NewUser />
