@@ -6,6 +6,7 @@ import 'webdatarocks/webdatarocks.css'
 export default function Reports() {
   return (
     <div className="reports">
+    <h3 className="reportTitle">Reports</h3>
       <div className="App">
         <WebDataRocksReact.Pivot 
          toolbar={true}

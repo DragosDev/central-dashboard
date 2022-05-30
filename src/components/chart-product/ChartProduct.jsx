@@ -24,7 +24,6 @@ export default function ChartProduct({ title, data, dataKey,grid, bar}) {
           <XAxis dataKey="name" stroke="#5550bd" />
           <Line type="monotone" dataKey={dataKey} stroke="#5550bd" />
           <Tooltip />
-          <Legend/>
           {grid && <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5" />}
         </LineChart>
 
