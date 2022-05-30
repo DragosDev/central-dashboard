@@ -4,7 +4,7 @@
 .topbar{
     width: 100%;
     height: 50px;
-    background-color: rgb(160, 100, 238);
+    background-color: #E9C46A;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -24,7 +24,7 @@
 .logo{
     font-weight: bold;
     font-size: 30px;
-    color: greenyellow;
+    color: #264653;
     cursor: pointer;
 }
 

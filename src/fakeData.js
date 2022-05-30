@@ -31,43 +31,66 @@ export const userData = [
       name: "Agu",
       "Active User": 3000,
     },
-    {
-      name: "Sep",
-      "Active User": 4000,
-    },
-    {
-      name: "Oct",
-      "Active User": 1000,
-    },
-    {
-      name: "Nov",
-      "Active User": 4000,
-    },
-    {
-      name: "Dec",
-      "Active User": 3000,
-    },
-  ];
+    ];
 
   export const productData = [
     {
       name: "Jan",
+      year: 2000,
       "Sales": 4000,
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
     },
     {
       name: "Feb",
       "Sales": 3000,
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+      
     },
     {
       name: "Mar",
       "Sales": 5000,
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
     },
-  ];
+    {
+      name: "Apr",
+      "Sales": 800,
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "May",
+      "Sales": 7000,
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "June",
+      "Sales": 5500,
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    {
+      name: "July",
+      "Sales": 7880,
+      uv: 3000,
+      pv: 1398,
+      amt: 2210,
+    },
+    ];
 
   export const userRows = [
     {
       id: 1,
-      username: "Jon Snow",
+      username: "User 1",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
@@ -76,85 +99,14 @@ export const userData = [
     },
     {
       id: 2,
-      username: "Jon Snow",
+      username: "User 2",
       avatar:
         "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       email: "jon@gmail.com",
       status: "active",
       transaction: "$120.00",
     },
-    {
-      id: 3,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 4,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 5,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 6,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 7,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 8,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 9,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 10,
-      username: "Jon Snow",
-      avatar:
-        "https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      email: "jon@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
+    
   ];
 
   export const productRows = [

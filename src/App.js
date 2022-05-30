@@ -9,9 +9,13 @@ import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
+import Reports from "./pages/reports/Reports";
+import Moveable from 'react-moveable';
+
 
 function App() {
   return (
+    
     <Router>
       <Topbar />
       <div className="container">
@@ -38,9 +42,14 @@ function App() {
           <Route path="/newproduct">
             <NewProduct />
           </Route>
+
+          <Route path="/reports">
+            <Reports />
+          </Route>
         </Switch>
       </div>
     </Router>
+    
   );
 }
 
