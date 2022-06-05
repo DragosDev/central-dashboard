@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Description
+Admin / Central Dashboard made in react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started
+1. In the terminal run
+<br>
+<code>npx create-react-app ./</code>
 
-## Available Scripts
+2. Install the Material Icons
+<br><code>yarn add @material-ui/icons</code>
+<br><code>yarn add @material-ui/core</code>
 
-In the project directory, you can run:
+3. Install recharts
+<br><code>yarn add recharts</code>
 
-### `npm start`
+4. Clean application directories by removing the files we don't need from the public directory
+<br>![](2022-05-22-21-18-38.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. Clean the file from the src directory that we dont need
+<br>![](2022-05-22-21-21-13.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+6. Clean the index.html file of some code 
+<br>![](2022-05-22-21-24-18.png)
 
-### `npm test`
+7. Install the fonts from google fonts and copy them in index.html
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+8. In index.js delete the imports for the file that we're deleted before
 
-### `npm run build`
+9. Your App.js file should look like this 
+<br>![](2022-05-22-21-35-48.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Creating the components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<strong>1. TopBar</strong>
+<br>a. Create Topbar.jsx - we are using JSX because it's more easier to use html inside of the components.
+<br>
+b. Topbar.jsx - Type in rfc - this is a special command for React, which can be installed from the VS Extension tab. It's called ES7 React/Redux
+<br>
+Your code should look like:
+```
+import React from 'react'
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+export default function Topbar() {
+  return (
+    <div>Topbar</div>
+  )
+}
+```
+c. App.js -  Import the Topbar component in App.js
+```
+import Topbar from './components/topbar/Topbar'
+function App() {
+  return (
+    <div>
+      <Topbar/>
+    </div>
+  )
+}
+export default App;
+```
 
-### `npm run eject`
+d. topbar.css - inside the topbar folder create a new file topbar.css
+<br>
+e. Topbar.jsx - import the topbar.css file created
+<br><code>import './topbar.css'</code>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Features
+<br> 1. Reports with webdata-rocks
+<br> Install yarn add webdata-rocks
+<br> Create Report.jsx and add code : 
+```
+import React from 'react'
+import * as WebDataRocksReact from 'react-webdatarocks';
+import "./reports.css"
+import 'webdatarocks/webdatarocks.css'
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+export default function Reports() {
+  return (
+    <div className="reports">
+      <div className="App">
+        <WebDataRocksReact.Pivot 
+         toolbar={true}
+         componentFolder="https://cdn.webdatarocks.com/"
+         width="100%"
+         report="https://cdn.webdatarocks.com/reports/report.json"
+        />
+      </div>
+      
+      </div>
+  )
+}
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Errors
+1. Unreachable code  no-unreachable in App.js and the Topbar.jsx component is not loading in the App.js screen
+<br>Possible you forgot to add the parenthesis's to the return ()
+<br>![](2022-05-23-10-04-21.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. react-router-dom
+<br>Please install the react-router-dom@5.2.0 instead of the latest version of react-router-dom
 
-### Code Splitting
+3. yarn add @mui-material
+<br>You might have an error regarding the material ui icons, 
+<br>Install the @mui-material package as well because the latest version was renamed to mui from material
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Can't resolve '@mui/data-grid'
+<br> Import as 
+<br><code>import { DataGrid } from "@mui/x-data-grid";</code>
 
-### Analyzing the Bundle Size
+4. The users page is not showing up
+<br> In the userList.jsx import the DataGrid from material-ui 
+<br><code>import { DataGrid } from "@material-ui/data-grid";</code>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. The Users and Products pages etc from the sidebar are not routing when clicked but work on direct link 
+<br>Have react-router-dom@5.2.0.0 installed
+<br>Add this code into your index.js
+<br>The problem is the ReactDOM component which is created by default
+<br>Wrap your <App /> component in BrowserRouter and it should work
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+```
