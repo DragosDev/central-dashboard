@@ -133,3 +133,7 @@ root.render(
   </BrowserRouter>
 );
 ```
+
+6. Netlify Deploy Fail with error
+<br>Can't resolve '@emotion/styled
+<br>Creating a process.env and adding CI=true; - meaning Continous Integration to detect which build is locally and which one is executing in a CI environment.
